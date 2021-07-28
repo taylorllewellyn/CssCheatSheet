@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="./resources/css/styles.css" type="text/css">
+</head>
+<body>
+    <header><h1>CSS Selectors</h1></header>
+    <h2>Reference Table of CSS Selectors</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Meaning</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Universal Selector</th>
+                <td>Applies to all elements</td>
+                <td><span class="code-color code">* {}</span><br />Targets all elements on the page</td>
+            </tr>
+            <tr>
+                <th>Type Selector</th>
+                <td>Matches element names</td>
+                <td><p><span class="code-color code">h1, h2, h3 {}</span></p>Targets the <span class="code">&lt;h1&gt;, &lt;h2&gt;</span> and <span class="code">&lt;h3&gt;</span> elements</td>
+            </tr>
+            <tr>
+                <th>Class Selector</th>
+                <td>Matches an element based on their class attribute</td>
+                <td><p><span class="code-color code">.note {}</span></p>Targets any element whose class attribute has a value of note<br />
+                <span class="code">p.note {}</span><br />Targets only <span class="code">&lt;p&gt;</span> elements whose class attribute has a value of note</td>
+            </tr>
+            <tr>
+                <th>ID Selector</th>
+                <td>Matches an element based on their id attribute</td>
+                <td><p><span class="code-color code">#introduction {}</span></p>Targets the element whose id attribute is <span class="code">introduction</span></td>
+            </tr>
+            <tr>
+                <th>Child Selector</th>
+                <td>Matches an element that is a direct child of another</td>
+                <td><p><span class="code-color code">li>a {}</span></p>
+                Targets any <span class="code">&lt;a&gt;</span> element that are children of an <span class="code">&lt;li&gt;</span> element</td>
+            </tr>
+            <tr>
+                <th>Descendant Selector</th>
+                <td>AMatches an element thatis a descendent of another specified element (not just a direct child of that element)</td>
+                <td><p><span class="code-color code">p a {}</span></p>
+                Targets any <span class="code">&lt;a&gt;</span> elements that sit inside a <span class="code">&lt;p&gt;</span> element, even if there are other elements nested between them</td>
+            </tr>
+            <tr>
+                <th>Adjacent Sibling Selector</th>
+                <td>Matches an element that is the next sibling of another</td>
+                <td><p><span class="code-color code">h1+p {}</span></p>Targets the first <span class="code">&lt;p&gt;</span> element after any <span class="code">&lt;h1&gt;</span> element (but not other <span class="code">&lt;p&gt;</span> elements)
+            </tr>
+            <tr>
+                <th>General Sibling Selector</th>
+                <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+                <td><p><span class="code-color code">h1~p {}</span></p>If you had two <span class="code">&lt;p&gt;</span> elements that are siblings of an <span class="code">&lt;h1&gt;</span> element, this rule would apply to both</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
